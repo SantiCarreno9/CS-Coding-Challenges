@@ -1,6 +1,6 @@
 using TestDome;
 
-namespace TestDomeExamplesTest.AccountTesting
+namespace TestDomeTest
 {
     [TestFixture]
     public class AccountTests
@@ -45,7 +45,7 @@ namespace TestDomeExamplesTest.AccountTesting
         [Test]
         public void DepositAndWithdrawReturnsCorrectly()
         {
-            Account account = new Account(0);            
+            Account account = new Account(0);
             Assert.AreEqual(true, account.Deposit(20));
             Assert.AreEqual(true, account.Withdraw(5));
         }

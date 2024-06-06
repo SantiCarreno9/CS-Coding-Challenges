@@ -1,6 +1,6 @@
 ﻿using TestDome;
 
-namespace TestDomeExamplesTest.RecyclingBinTesting
+namespace TestDomeTest
 {
     [TestFixture]
     public class RecyclingBinTests
@@ -18,15 +18,15 @@ namespace TestDomeExamplesTest.RecyclingBinTesting
             recyclingBin.Add("plastic button");
             recyclingBin.Add("wire");
             recyclingBin.Add("brass");
-            
+
             recyclablesSorted = recyclingBin.SortRecyclables();
-        }                        
+        }
 
         //One of the groups returned from SortRecyclables will have "metal" as its key and will contain
         //"metal bar" and "metal pipe".
         [Test]
         public void MetalGroupContainsMetalPipeOnly()
-        {            
+        {
             int metalIndex = recyclablesSorted.FindIndex(x => x.Key.Equals("metal"));
             Assert.That(metalIndex, !Is.EqualTo(-1));
             Assert.That(recyclablesSorted[metalIndex].Count(), Is.EqualTo(1));
@@ -54,7 +54,7 @@ namespace TestDomeExamplesTest.RecyclingBinTesting
             int brassIndex = recyclablesSorted.FindIndex(x => x.Key.Equals("brass"));
             Assert.That(brassIndex, Is.EqualTo(-1));
 
-            int metalIndex = recyclablesSorted.FindIndex(x => x.Key.Equals("metal"));            
+            int metalIndex = recyclablesSorted.FindIndex(x => x.Key.Equals("metal"));
             Assert.That(recyclablesSorted[metalIndex].Contains("metal bar"), Is.False);
             Assert.That(recyclablesSorted[metalIndex].Contains("metal pipe"), Is.True);
         }

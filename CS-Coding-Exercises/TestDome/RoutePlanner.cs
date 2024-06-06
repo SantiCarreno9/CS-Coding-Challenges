@@ -1,6 +1,6 @@
-﻿#region RECURSION Alternative (fastest solution)
-using System;
+﻿namespace TestDome;
 
+#region RECURSION Alternative (fastest solution)
 public class RoutePlanner
 {
     public static bool RouteExists(int fromRow, int fromColumn, int toRow, int toColumn,

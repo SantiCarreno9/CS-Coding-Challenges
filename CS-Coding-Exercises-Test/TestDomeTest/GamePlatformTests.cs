@@ -1,4 +1,4 @@
-﻿namespace TestDomeExamplesTest.GamePlatformTesting
+﻿namespace TestDomeTest
 {
     [TestFixture]
     public class GamePlatformTests
@@ -18,7 +18,7 @@
         {
             const double initialSpeed = 60;
             int[] inclinations = new int[] { 0, 30, 0, 30, 0 };
-            double actualResult = GamePlatform.CalculateFinalSpeed(initialSpeed, inclinations);            
+            double actualResult = GamePlatform.CalculateFinalSpeed(initialSpeed, inclinations);
             Assert.That(actualResult, Is.AtMost(0));
         }
 

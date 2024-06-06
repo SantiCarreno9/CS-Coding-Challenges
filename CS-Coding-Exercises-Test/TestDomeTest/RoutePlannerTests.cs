@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static RoutePlanner;
+﻿using static TestDome.RoutePlanner;
 
-namespace TestDomeExamplesTest.RoutePlannerTesting
+namespace TestDomeTest
 {
     [TestFixture]
     public class RoutePlannerTests
@@ -19,7 +14,7 @@ namespace TestDomeExamplesTest.RoutePlannerTesting
         bool[,] mapMatrix2 = {
             {true, false, true, false},
             {true, true, false, true},
-            {false, true, true, false}, 
+            {false, true, true, false},
             {false, false, true, true}
         };
 
@@ -81,7 +76,7 @@ namespace TestDomeExamplesTest.RoutePlannerTesting
             //First Item
             Assert.That(RouteExists(0, 0, 0, 1, mapMatrix), Is.False);
             Assert.That(RouteExists(0, 0, 0, 2, mapMatrix), Is.False);
-            
+
             Assert.That(RouteExists(0, 0, 1, 0, mapMatrix), Is.True);
             Assert.That(RouteExists(0, 0, 1, 1, mapMatrix), Is.True);
             Assert.That(RouteExists(0, 0, 1, 2, mapMatrix), Is.False);
@@ -93,8 +88,8 @@ namespace TestDomeExamplesTest.RoutePlannerTesting
             //Second Item
             for (int i = 0; i < mapMatrix.GetLength(0); i++)
             {
-                for (int j = 0; j < mapMatrix.GetLength(1); j++)               
-                    Assert.That(RouteExists(0, 1, i, j, mapMatrix), Is.False);                
+                for (int j = 0; j < mapMatrix.GetLength(1); j++)
+                    Assert.That(RouteExists(0, 1, i, j, mapMatrix), Is.False);
             }
 
             //Third Item
@@ -102,7 +97,7 @@ namespace TestDomeExamplesTest.RoutePlannerTesting
             {
                 for (int j = 0; j < mapMatrix.GetLength(1); j++)
                     Assert.That(RouteExists(0, 2, i, j, mapMatrix), Is.False);
-            }            
+            }
         }
 
         [Test]
@@ -112,7 +107,7 @@ namespace TestDomeExamplesTest.RoutePlannerTesting
             Assert.That(RouteExists(1, 0, 0, 0, mapMatrix), Is.True);
             Assert.That(RouteExists(1, 0, 0, 1, mapMatrix), Is.False);
             Assert.That(RouteExists(1, 0, 0, 2, mapMatrix), Is.False);
-            
+
             Assert.That(RouteExists(1, 0, 1, 1, mapMatrix), Is.True);
             Assert.That(RouteExists(1, 0, 1, 2, mapMatrix), Is.False);
 
@@ -173,7 +168,7 @@ namespace TestDomeExamplesTest.RoutePlannerTesting
 
             Assert.That(RouteExists(2, 2, 2, 0, mapMatrix), Is.False);
             Assert.That(RouteExists(2, 2, 2, 1, mapMatrix), Is.True);
-            
+
         }
 
         #endregion

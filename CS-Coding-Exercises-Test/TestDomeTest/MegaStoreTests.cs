@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static MegaStore;
+﻿using static TestDome.MegaStore;
 
-namespace TestDomeExamplesTest.MegaStoreTesting
+namespace TestDomeTest
 {
     [TestFixture]
     public class MegaStoreTests
@@ -15,14 +10,14 @@ namespace TestDomeExamplesTest.MegaStoreTesting
         [Test]
         public void ExampleCase()
         {
-            Assert.That(GetDiscountedPrice(12, totalPrice, DiscountType.Weight),Is.EqualTo(82));
+            Assert.That(GetDiscountedPrice(12, totalPrice, DiscountType.Weight), Is.EqualTo(82));
         }
 
         [Test]
         public void StandardDiscount()
         {
             double expectedValue = totalPrice - 6;
-            Assert.That(GetDiscountedPrice(12, totalPrice, DiscountType.Standard),Is.EqualTo(expectedValue));
+            Assert.That(GetDiscountedPrice(12, totalPrice, DiscountType.Standard), Is.EqualTo(expectedValue));
         }
 
         [Test]

@@ -24,16 +24,16 @@ namespace TestDome;
 
 internal class CommonCharacters
 {
-    public static void Main(string[] args)
-    {
-        //var words = new string[] { "bella", "label", "roller" };
-        var words = new string[] { "cool", "lock", "cook" };
-        var common = CommonChars(words);
-        foreach (var chars in common)
-        {
-            Console.WriteLine(chars);
-        }
-    }
+    //public static void Main(string[] args)
+    //{
+    //    //var words = new string[] { "bella", "label", "roller" };
+    //    var words = new string[] { "cool", "lock", "cook" };
+    //    var common = CommonChars(words);
+    //    foreach (var chars in common)
+    //    {
+    //        Console.WriteLine(chars);
+    //    }
+    //}
 
     public static IList<string> CommonChars(string[] words)
     {

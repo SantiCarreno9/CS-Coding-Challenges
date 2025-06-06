@@ -5,7 +5,6 @@ namespace TestDomeTest
     [TestFixture]
     public class AccountTests
     {
-
         [Test]
         public void DepositCannotAcceptNegativeAmounts()
         {

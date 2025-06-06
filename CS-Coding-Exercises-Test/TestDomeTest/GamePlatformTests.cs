@@ -1,4 +1,6 @@
-﻿namespace TestDomeTest
+﻿using TestDome;
+
+namespace TestDomeTest
 {
     [TestFixture]
     public class GamePlatformTests

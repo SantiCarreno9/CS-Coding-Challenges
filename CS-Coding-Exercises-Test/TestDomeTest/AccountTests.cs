@@ -9,8 +9,8 @@ namespace TestDomeTest
         public void DepositCannotAcceptNegativeAmounts()
         {
             Account account = new Account(0);
-            Assert.AreEqual(false, account.Deposit(-20));
-            Assert.AreEqual(false, account.Withdraw(-20));
+            Assert.Equals(false, account.Deposit(-20));
+            Assert.Equals(false, account.Withdraw(-20));
         }
 
         [Test]
@@ -18,7 +18,7 @@ namespace TestDomeTest
         {
             Account account = new Account(0);
             account.Deposit(20);
-            Assert.AreEqual(false, account.Withdraw(-20));
+            Assert.Equals(false, account.Withdraw(-20));
         }
 
 
@@ -28,7 +28,7 @@ namespace TestDomeTest
             Account account = new Account(0);
             double amount = 20;
             account.Deposit(amount);
-            Assert.AreEqual(amount, account.Balance);
+            Assert.Equals(amount, account.Balance);
         }
 
         [Test]
@@ -38,15 +38,15 @@ namespace TestDomeTest
             account.Deposit(20);
             account.Withdraw(5);
             double amount = 20 - 5;
-            Assert.AreEqual(amount, account.Balance);
+            Assert.Equals(amount, account.Balance);
         }
 
         [Test]
         public void DepositAndWithdrawReturnsCorrectly()
         {
             Account account = new Account(0);
-            Assert.AreEqual(true, account.Deposit(20));
-            Assert.AreEqual(true, account.Withdraw(5));
+            Assert.Equals(true, account.Deposit(20));
+            Assert.Equals(true, account.Withdraw(5));
         }
     }
 }

@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../Directory.Build.props" />
+    <File Path="../Directory.Packages.props" />
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="../CS-Coding-Exercises-Test/CS-Coding-Exercises-Test.csproj" />
+  <Project Path="CS-Coding-Exercises.csproj" />
+</Solution>

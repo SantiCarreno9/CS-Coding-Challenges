@@ -3,7 +3,7 @@
 namespace LeetCodeTest.ContainerWithMostWaterTest;
 
 [TestFixture]
-public class ContainerWithMostWaterTest
+internal class ContainerWithMostWaterTest
 {
     private ContainerWithMostWater _containerWithMostWater;
 

@@ -3,7 +3,7 @@
 namespace LeetCodeTest.AddTwoNumbersTest;
 
 [TestFixture]
-public class LongestCommonPrefixTest
+internal class LongestCommonPrefixTest
 {
     [TestCase(new string[] { "flower", "flow", "flight" }, "fl")]
     [TestCase(new string[] { "dog", "racecar", "car" }, "")]

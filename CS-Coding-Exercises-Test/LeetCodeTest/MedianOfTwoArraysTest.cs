@@ -3,7 +3,7 @@
 namespace LeetCodeTest.MedianOfTwoArraysTest;
 
 [TestFixture]
-public class MedianOfTwoArraysTest
+internal class MedianOfTwoArraysTest
 {
     MedianOfTwoArrays medianOfTwoArrays;
 

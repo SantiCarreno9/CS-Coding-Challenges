@@ -2,7 +2,7 @@
 
 namespace LeetCodeTest.ReverseIntegerTest;
 [TestFixture]
-public class ReverseIntegerTest
+internal class ReverseIntegerTest
 {
     ReverseInteger reverseInteger;
     [SetUp]

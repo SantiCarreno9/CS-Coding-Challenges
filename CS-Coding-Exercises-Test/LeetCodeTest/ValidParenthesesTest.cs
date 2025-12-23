@@ -3,7 +3,7 @@
 namespace LeetCodeTest.AddTwoNumbersTest;
 
 [TestFixture]
-public class ValidParenthesesTest
+internal class ValidParenthesesTest
 {
     [TestCase("()", true)]    
     [TestCase("()[]{}", true)]    

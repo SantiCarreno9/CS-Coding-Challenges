@@ -2,7 +2,7 @@
 
 namespace LeetCodeTest.TwoSumTest;
 [TestFixture]
-public class TwoSumTest
+internal class TwoSumTest
 {
     TwoSum twoSum;
     [SetUp]

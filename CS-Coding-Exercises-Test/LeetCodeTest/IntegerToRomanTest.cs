@@ -2,7 +2,7 @@
 namespace LeetCodeTest.IntegerToRomanTest;
 
 [TestFixture]
-public class IntegerToRomanTest
+internal class IntegerToRomanTest
 {
     IntegerToRoman integerToRoman;
 

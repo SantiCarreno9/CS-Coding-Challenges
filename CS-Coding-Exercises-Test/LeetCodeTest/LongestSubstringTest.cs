@@ -2,7 +2,7 @@
 
 namespace LeetCodeTest.LongestSubstringTest;
 [TestFixture]
-public class LongestSubstringTest
+internal class LongestSubstringTest
 {
     LongestSubstring longestSubstring;
 

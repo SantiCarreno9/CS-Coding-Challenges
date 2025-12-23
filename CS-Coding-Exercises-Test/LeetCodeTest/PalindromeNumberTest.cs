@@ -2,7 +2,7 @@
 
 namespace LeetCodeTest.PalindromeNumberTests;
 
-public class PalindromeNumberTest
+internal class PalindromeNumberTest
 {
     PalindromeNumber checker;
 

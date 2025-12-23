@@ -3,7 +3,7 @@
 namespace LeetCodeTest.AddTwoNumbersTest;
 
 [TestFixture]
-public class AddTwoNumbersTest
+internal class AddTwoNumbersTest
 {
     AddTwoNumbers addTwoNumbers;
 
